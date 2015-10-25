@@ -1,0 +1,448 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+ .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+} 
+
+
+/* Base Styles 
+--------------------------------------------------------*/
+
+body {
+  color: #143642;
+  font-size: 16px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+    text-rendering: optimizeLegibility;
+}
+
+
+h1 {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+/* Main Styles 
+------------------------------------------------------------*/
+
+
+header {
+  	background-color: #0F8B8D;
+	background:
+	linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url(img/cityblur.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  background-repeat: none;
+  height: 650px;
+  padding: 1px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 3px 3px 9px #143642;
+}
+
+
+h1 {
+	font-size: 100px;
+	margin-top: 190px;
+	margin-bottom: 20px;
+	font-weight: 100;
+	text-transform:lowercase;
+	letter-spacing: 7px;
+
+}
+
+h2 {
+	font-size: 30px;
+	margin-bottom: 40px;
+	font-weight: 100;
+}
+
+.arrow {
+margin-top: 120px;
+  width: 50px;
+}
+
+
+h3 {
+	font-size: 30px;
+	color: #143642;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 100;
+	padding-bottom: 15px;
+	padding-top: 50px;
+	margin: 40px 0 20px 0px;
+	font-weight: 300;
+	text-transform:lowercase;
+	letter-spacing: 7px;
+}
+
+.wrapper {
+	width: 92%;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+}
+
+.about,
+.portfolio,
+.contact {
+	width: 100%;
+}
+
+.column {
+	width: 33.33%;
+	float: left;
+	vertical-align: top;
+	display: inline-block;
+	margin: 0;
+	padding: 15px;
+	overflow: hidden;
+	display: absolute;
+}
+
+
+.column img {
+	max-width: 100%;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #aaa;
+	 border: 5px solid #fff;
+}
+
+.projectImage {
+	width: 33.33%;
+	float: left;
+	vertical-align:top;
+	display: inline-block;
+	margin: 0;
+	padding: 15px;
+	overflow: hidden;
+	display: relative;
+
+}
+.projectImage img {
+			width: 100%;
+			margin: 10px;
+			display: inline-block;
+			text-align: center;
+			float: left;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px #aaa;
+		 	border: 5px solid #fff;
+			 overflow: hidden;
+  	 		position: relative;
+   			cursor: default;
+		}
+	
+
+
+.grayscale {
+    left: 0;
+    position:absolute;
+    text-align:center;
+    width: 100%;
+}
+
+.overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	color: white;
+	display: none;
+	z-index: 10;
+}
+
+.projectImage img:hover .overlay {
+	display: block;
+}
+
+/* Social
+------------------------------------------------------------*/
+
+.wrapper .social {
+	text-align: center;
+	height: 140px;
+}
+
+.social img {
+	width: 55px;
+	margin: 20px 30px 50px 30px;
+}
+
+.social img {
+    -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+    -moz-transition: all 0.5s ease; /* Firefox */
+    -ms-transition: all 0.5s ease; /* IE 9 */
+    -o-transition: all 0.5s ease; /* Opera */
+    transition: all 0.5s ease;
+}
+
+.social img:hover {
+    -webkit-transform:scale(1.2); /* Safari and Chrome */
+    -moz-transform:scale(1.2); /* Firefox */
+    -ms-transform:scale(1.2); /* IE 9 */
+    -o-transform:scale(1.2); /* Opera */
+     transform:scale(1.2);
+}
+
+
+
+footer p {
+	text-align: center;
+	color: white;
+}
+
+footer a:active {
+	color: white;
+}
+
+
+footer {
+	background-color: #143642;
+	padding: 5px 0 5px 0;
+	text-align: center;
+	font-size: 14px;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
+footer a:hover {
+	font-weight: bold;
+	color: white;
+}
+
+
+/* Navigation at Top 
+------------------------------------------------------------*/
+
+.main-wrapper {
+	width: 100%;
+	background-color: #143642;
+	position: fixed;
+	padding: 5px 0 5px 0;
+	white-space: nowrap;
+	display: table;
+	z-index: 2;
+}
+
+
+.main-logo {
+	margin: 0 50px 0 0;
+}
+
+.main-logo,
+.right-nav,
+.right-nav li {
+	display: inline-block;
+}
+
+.main-logo,
+.right-nav {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.main-logo,
+.right-nav li {
+	margin: 0 10px 0 10px;
+}
+
+
+.right-nav {
+	text-align: right;
+
+}
+
+.main-logo {
+	width: 10px;
+	font-weight: 300;
+}
+
+.main-logo a,
+.right-nav a {
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	padding: 10px 20px;
+}
+
+.right-nav a:hover {
+	font-weight: bold;
+
+}
+
+.main-logo a:hover {
+	font-weight: bold;
+}
+
+/* Image Gallery Hover */
+
+
+
+img.grayscale {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+img.grayscale:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+
+/* Media Queries 
+-----------------------------------------------------*/
+
+
+
+
+
+@media only screen and (max-width : 1200px) {
+
+ 
+
+}
+
+ 
+
+@media only screen and (max-width : 979px) {
+
+	body {
+		max-width: 979px;
+	}
+
+
+	h1 {
+		margin-top: 130px;
+	}
+
+	header {
+		height: 500px;
+	}
+
+	.arrow {
+		margin-top: 50px;
+		margin-bottom: 20px;
+	}
+
+	h3 {
+		padding-top: 20px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	.social img {
+		width: 40px;
+	}
+
+	.social img:hover {
+		width: 55px;
+	}
+
+	.projectImage img {
+		box-shadow: 0px 0px 5px #aaa;
+		 	border: 5px solid #fff;
+		 }
+
+}
+
+
+@media only screen and (max-width : 767px) {
+
+	 body {
+	 	max-width: 767px;
+
+	 }
+
+
+		h1 {
+				padding-top: 80px;
+				font-size: 44px;
+			}
+
+		h2 {
+				font-size: 24px;
+			}
+
+		h3 {
+			font-size: 20px;
+		}
+
+		p {
+			font-size: 15px;
+		}
+
+		.arrow {
+			width: 30px;
+			margin-top: 10px;
+		}
+
+}
+	 
+
+@media only screen and (max-width : 480px) {
+
+	body {
+				max-width: 480px;
+			}
+	
+	.main-wrapper {
+		display: none;
+	}
+
+
+		header {
+			height: 300px;
+		}
+
+		h1 {
+			margin-top: 12px;
+		}
+
+.about,
+.portfolio,
+.skills {
+	width: 92%;
+}
+
+	.column {
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+		padding: 0 15px;
+	}
+
+	.column img {
+		display: none;
+	}
+
+	.projectImage {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.social img {
+	margin: 10px 15px 25px 15px;
+	}
+
+
+}
+ 
